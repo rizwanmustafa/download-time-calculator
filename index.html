@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Remaining Download Time Calculator</title>
+
+	<style>
+		body { 
+			background-color: black; 
+			font-family: "Roboto", sans-serif; 
+			color: white;
+		}
+
+		#overlayDiv { 
+			display: grid; 
+			grid-template-columns: 1fr 1fr; 
+			width: 50%; 
+			max-width: 500px; 
+			grid-gap: 20px
+		}
+		#remaining-time, #calculate-button {
+			margin-top: 20px;
+		}
+	</style>
+</head>
+
+<body>
+	<h1>Remaining Download Time Calculator</h1>
+	
+	<div id="overlayDiv">
+			<span>Completed Download (GBs):</span>
+			<input id="completed-input" value="0" />
+			<span>Total Download (GBs):</span>
+			<input id="total-input" value="1" />
+			<span>Internet Download Speed (MBs):</span>
+			<input id="internet-speed-input" value="1" />
+	</div>
+
+	<button id="calculate-button">Calculate</button>
+
+	<p id="remaining-time">Your remaining time is: N/A | Download will finish on: N/A</p>
+
+	<script src="./script.js" defer></script>
+</body>
+</html>
